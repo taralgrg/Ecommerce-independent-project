@@ -38,7 +38,7 @@
      <%= f.submit "Add to cart" %>
    <% end %>
  <% end %>
- 
+
 
  <% if @order_items.any? %>
      <% @order_items.each do |item| %>
@@ -46,6 +46,11 @@
        <p> Unit Price: <%= number_to_currency item.product.price %> | Quantity: <%= item.quantity %> | Total Price: <%= number_to_currency (item.product.price * item.quantity) %></p>
      <% end %>
      <p>Your Total: <%= number_to_currency current_order.total_price %></p>
+     <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+             data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+             data-description="A month's subscription"
+             data-amount=<%= current_order.total_price * 100%>
+             data-locale="auto"></script>
    <% else %>
      <p>Your shopping cart is empty.</p>
    <% end %>

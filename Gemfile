@@ -11,6 +11,7 @@ source 'https://rubygems.org'
   gem 'jbuilder', '~> 2.5'
   gem 'dotenv-rails'
   gem 'devise'
+  gem 'stripe'
 
   group :development, :test do
     gem 'byebug', platform: :mri
