@@ -12,6 +12,7 @@ source 'https://rubygems.org'
   gem 'dotenv-rails'
   gem 'devise'
   gem 'stripe'
+  gem "paperclip", "~> 5.0.0"
 
   group :development, :test do
     gem 'byebug', platform: :mri

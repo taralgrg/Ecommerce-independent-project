@@ -17,6 +17,7 @@
       <tr>
         <td><%= product.price %> $</td>
         <td><%= product.name %></td>
+        <td><%= image_tag product.image.url(:thumb) %></td>
         <td><%= product.description %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
