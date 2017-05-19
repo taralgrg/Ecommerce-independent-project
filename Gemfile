@@ -13,6 +13,9 @@ source 'https://rubygems.org'
   gem 'devise'
   gem 'stripe'
   gem "paperclip", "~> 5.0.0"
+  gem 'devise-bootstrap-views'
+  gem 'twitter-bootstrap-rails'
+  gem 'bootstrap-sass'
 
   group :development, :test do
     gem 'byebug', platform: :mri

@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap-sprockets";
+@import "devise_bootstrap_views";
+@import "bootstrap";
+
+.panel {
+    width: 342px;
+    height: 321px;
+    position: absolute;
+    top: 32%;
+    left: 49%;
+    margin-top: -103px;
+    margin-left: -150px;
+}
